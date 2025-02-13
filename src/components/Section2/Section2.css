@@ -4,9 +4,9 @@
     text-align: center;
     padding: 50px 20px;
     font-family: Libre Baskerville;
-    height: 120vh;
     width: 100%;
     padding: 0 50px;
+    min-height: auto;
   }
   
   h2 {
@@ -41,11 +41,11 @@
     align-items: center;
     height: 200px;
     /* width: 300px; */
-    background-color: #fff1de;
+    /* background-color: #fff1de; */
     padding: 20px;
-    border: 1px solid black;
+    /* border: 0.5px solid black; */
     border-radius: 10px;
-    box-shadow: 5px 5px 0px rgb(20, 19, 19);
+    box-shadow: 5px 5px 10px rgba(20, 19, 19, 0.162);
     text-align: center;
     transition: ease-in-out 0.3s ;
   }
@@ -72,6 +72,10 @@
   }
   
   @media (max-width: 768px) {
+    .section2 {
+      padding: 20px 50px; 
+    }
+  
     .cards-wrapper {
       grid-template-columns: repeat(1, 1fr);
     }
