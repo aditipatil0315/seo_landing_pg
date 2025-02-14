@@ -26,7 +26,7 @@ const Section5 = () => {
   ];
 
   return (
-    <section className="section5">
+    <section className="section5" id="contact">
       {/* FAQ Section */}
       <div className="faq_section">
         <h2>Frequently Asked Questions</h2>
@@ -45,6 +45,12 @@ const Section5 = () => {
           ))}
         </div>
       </div>
+      {/* Special Offer */}
+      <div className="special_offer">
+        <h3>Limited-Time Offer:</h3>
+        <p>Get a Free Website Audit + 20% Discount on Your First Month!</p>
+        <button className="offer_button"> Claim Your Offer Now</button>
+      </div>
 
       {/* Call to Action */}
       <div className="cta_section">
@@ -53,12 +59,7 @@ const Section5 = () => {
         <button className="cta_button">Book Your Free SEO Consultation </button>
       </div>
 
-      {/* Special Offer */}
-      <div className="special_offer">
-        <h3>Limited-Time Offer:</h3>
-        <p>Get a Free Website Audit + 20% Discount on Your First Month!</p>
-        <button className="offer_button"> Claim Your Offer Now</button>
-      </div>
+      
     </section>
   );
 };

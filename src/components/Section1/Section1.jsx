@@ -17,16 +17,16 @@ const Section1 = () => {
         </div>
 
         <div className={`links ${menuOpen ? "open" : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <a onClick={() => {window.location.reload()}} href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
 
       <div className="content_section">
         <div className="left">
-          <h1>Dominate Search Results with Expert SEO Services Boost Your Online Visibility and Attract High-Quality Leads!</h1>
+          <h1><span>Dominate</span> Search Results with Expert SEO Services <span>Boost</span> Your Online Visibility and Attract <span>High-Quality Leads!</span></h1>
           <h3>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</h3>
         </div>
         <div className="right">
@@ -36,7 +36,7 @@ const Section1 = () => {
 
       <div className="problem_box">
         <div className="left_box">
-        <h2>Are You Struggling with These SEO Challenges?</h2>
+        <h2>Are You <span>Struggling</span> with These <span>SEO Challenges?</span></h2>
           <ul>
             <li>Your website isn’t appearing on the first page of search results.</li>
             <li>Potential customers are finding your competitors instead of you.</li>

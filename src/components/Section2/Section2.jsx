@@ -12,9 +12,9 @@ const Section2 = () => {
   ];
 
   return (
-    <div className="section2">
+    <div className="section2" id='products'>
       <h2> What We Offer is The Solution</h2>
-      <p className="section2-intro">Here’s what we do to help you rank higher and grow faster:</p>
+      <p className="section2-intro">Here’s what we do to help you <span>rank higher</span> and <span>grow faster</span>:</p>
 
       <div className="cards-wrapper">
         {services.map((service, index) => (
