@@ -1,0 +1,192 @@
+
+
+/* General Styles for Section5 */
+.section5 {
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* FAQ Section */
+  .faq_section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq_list {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .faq_item {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq_question {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    border: none;
+    background: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq_question span {
+    font-size: 1.5rem;
+    color: #f30856;
+  }
+  
+  .faq_answer {
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #555;
+    background: #fafafa;
+  }
+  
+  /* Active Question Style */
+  .faq_question.active {
+    color: #f30856;
+  }
+  
+  /* CTA Section */
+  .cta_section {
+    margin-top: 50px;
+    background: #f30856;
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .cta_section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta_section p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  
+  .cta_button {
+    background: white;
+    color: #f30856;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .cta_button:hover {
+    background: #d9ff06;
+    color: #222;
+  }
+  
+  /* Special Offer Section */
+  .special_offer {
+    margin-top: 30px;
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .special_offer h3 {
+    font-size: 1.5rem;
+    color: #d47d00;
+  }
+  
+  .special_offer p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .offer_button {
+    background: #d47d00;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .offer_button:hover {
+    background: #b36400;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section5 {
+      padding: 40px 5%;
+    }
+  
+    .faq_section h2,
+    .cta_section h2,
+    .special_offer h3 {
+      font-size: 1.5rem;
+    }
+  
+    .faq_question {
+      font-size: 1rem;
+    }
+  
+    .faq_answer {
+      font-size: 0.9rem;
+    }
+  
+    .cta_section {
+      padding: 30px;
+    }
+  
+    .cta_section p {
+      font-size: 1rem;
+    }
+  
+    .cta_button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .special_offer p {
+      font-size: 1rem;
+    }
+  
+    .offer_button {
+      font-size: 1rem;
+      padding: 8px 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq_question {
+      padding: 12px 15px;
+    }
+  
+    .cta_section {
+      padding: 25px;
+    }
+  
+    .cta_button {
+      width: 100%;
+    }
+  
+    .offer_button {
+      width: 100%;
+    }
+  }
+  
