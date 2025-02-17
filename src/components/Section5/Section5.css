@@ -60,8 +60,6 @@
   
   /* CTA Section */
   .cta_section {
-    margin-top: 50px;
-    background: #e6e6e6;
     padding: 40px;
     border-radius: 15px;
     color: rgb(0, 0, 0);
@@ -77,7 +75,8 @@
   }
   
   .cta_button {
-    background: white;
+    background: #FF5F4F;
+    color: whitesmoke;
     font-size: 1.2rem;
     padding: 12px 25px;
     border: none;
@@ -121,9 +120,7 @@
     margin-top: 10px;
   }
   
-  .offer_button:hover {
-    background: #b36400;
-  }
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {

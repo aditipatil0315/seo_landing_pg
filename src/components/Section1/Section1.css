@@ -1,20 +1,20 @@
 
 
 .section1 {
-    font-family: Libre Baskerville;
-    height: 160vh;
+  background-color: black;
+  color: whitesmoke;
+    height: 170vh;
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 90px;
   }
   
   .navbar {
-    background-color: white;
+    background-color: black;
     height: 9vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
   }
   
   .logo {
@@ -32,7 +32,7 @@
   .links a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
+    color: white;
     font-weight: 700;
   }
   
@@ -45,11 +45,39 @@
   }
   
   .content_section {
+    color: whitesmoke;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vh;
     width: 100%;
+  }
+
+  .content_section h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .content_section .book_slot {
+    height: 50px;
+    width: 270px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:#FE6054 ;
+    border-radius: 8px;
+
+  font-family: Montserrat ;
+    padding: 0 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 1px solid black;
+    outline: none;
+  }
+
+  .content_section p {
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
 
@@ -58,46 +86,16 @@
     
   }
   
-  .left {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    width: 60%;
-    height: 100%;
-    gap: 12px;
-  }
-  
-  .left h1 {
-    font-size: 37px;
-    font-weight: 700;
-    width: 80%;
-    line-height: 1.1;
-  }
-  
-  .left h3 {
-    width: 80%;
-    font-weight: 500;
-    color: black;
-  }
+ 
   
   
-  .right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
   
-  .right img {
-    width: 80%;
-    /* margin-right: 5rem; */
-  }
+  
 
   .problem_box {
    
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -105,120 +103,105 @@
     padding: 0px;
   }
 
+  .problem_box .box {
+    display: flex;
+    gap: 5rem;
+  }
+
   .problem_box span {
     color: #FE6054;
-  }
-  
-  .left_box {
-    width: 65%;
-  }
-  
-  .left_box h2 {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+  font-family: Montserrat ;
+    
   }
-  
-  .left_box ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .left_box ul li {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-  
-  .right_box {
+
+  .problem_box .left_sec1 , .problem_box .right_sec1{
     display: flex;
-    justify-content: start;
-    width: 30%;
-    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+
   }
-  
-  .right_box h2 {
-    font-size: 40px;
-    font-weight: 700;
+
+  .clients {
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
   }
-  
-  /* Responsive Design */
-  
-  @media (max-width: 1024px) {
-    .problem_box {
-      flex-direction: column;
-      padding: 30px 20px;
-    }
-  
-    .left_box, .right_box {
-      width: 100%;
-      text-align: left;
-    }
-  
-    .right_box {
-      margin-top: 20px;
-    }
+
+  .clients h3 {
+    color: whitesmoke;
+    font-size: 30px;
   }
-  
-  @media (max-width: 768px) {
-    .problem_box {
-      padding: 20px;
-    }
-  
-    .left_box h2, .right_box h2 {
-      font-size: 20px;
-    }
-  
-    .left_box ul li {
-      font-size: 14px;
-    }
+
+  .clients .client_box {
+    font-family: Montserrat ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
-  
-  @media (max-width: 480px) {
-    .problem_box {
-      padding: 15px;
-    }
-  
-    .left_box h2, .right_box h2 {
-      font-size: 18px;
-    }
-  
-    .left_box ul li {
-      font-size: 13px;
-    }
+
+  .client_box p {
+    font-family: Montserrat ;
+    font-size: 1.2rem;
+    font-size: 500;
   }
-  
-  
 
 
 
-
-  @media (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
+    .section1 {
+      padding: 0 40px;
+      height: auto;
+    }
+  
+    .navbar {
+      height: 8vh;
+      padding: 0 20px;
+    }
+  
+    .links {
+      gap: 20px;
+    }
+  
+    .content_section h1 {
+      font-size: 40px;
+    }
+  
+    .content_section p {
+      font-size: 1.2rem;
+    }
+  
+    .problem_box .box {
+      gap: 3rem;
+    }
+  
+    .problem_box .left_sec1, .problem_box .right_sec1 {
+      width: 350px;
+      height: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
     .section1 {
       padding: 0 20px;
     }
   
-    .left h1 {
-      font-size: 32px;
-    }
-  
-    .left h3 {
-      font-size: 16px;
-    }
-  
-    .explore_btn {
-      width: 140px;
-      height: 38px;
-      font-size: 14px;
-    }
-
-    
-  }
-  
-  @media (max-width: 768px) {
     .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      height: 7vh;
+      padding: 0 15px;
     }
   
     .hamburger {
@@ -227,15 +210,14 @@
   
     .links {
       display: none;
-      position: absolute;
-      top: 70px;
-      right: 20px;
       flex-direction: column;
-      background-color: white;
-      width: 200px;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 7vh;
+      right: 0;
+      width: 100%;
+      background-color: black;
+      padding: 10px 0;
+      text-align: center;
     }
   
     .links.open {
@@ -244,71 +226,140 @@
   
     .links a {
       padding: 10px 0;
-      text-align: center;
-      font-size: 16px;
-    }
-  
-    .login-btn {
-      width: 30%;
-      height: 20px;
-    width: 70px;
-      font-size:12px ;
-      margin-top: 10px;
+      font-size: 14px;
     }
   
     .content_section {
-      flex-direction: column;
       height: auto;
-      text-align: center;
-      margin-top: 50px;
-      text-align: left;
+      padding: 20px 0;
     }
   
-    .left, .right {
-      width: 100%;
-      align-items: center;
-      text-align: left;
-      margin-bottom: 1rem;
+    .content_section h1 {
+      font-size: 32px;
     }
   
-    .left h1, .left h3 {
+    .content_section p {
+      font-size: 1rem;
+    }
+  
+    .book_slot {
+      width: 220px;
+      height: 45px;
+      font-size: 14px;
+    }
+  
+    .problem_box {
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .problem_box .box {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .problem_box .left_sec1, .problem_box .right_sec1 {
       width: 90%;
+      height: 160px;
     }
-  
-    .explore_btn {
-      margin-top: 20px;
-    }
-  
-    .right img {
-      width: 80%;
-      margin-right: 0rem;
 
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .section1 {
-      padding: 0 20px;
+    .clients {
+      text-align: center;
+      padding: 20px 0;
     }
   
-    .left h1 {
+    .clients h3 {
       font-size: 24px;
     }
   
-    .left h3 {
-      font-size: 14px;
+    .clients .client_box {
+      flex-direction: column;
+      gap: 1rem;
     }
   
-    .explore_btn {
-      width: 120px;
-      height: 36px;
-      font-size: 14px;
+    .client_box p {
+      font-size: 1rem;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section1 {
+      padding: 20px 10px;
     }
   
-    .right img {
-      width: 100%;
-      margin-right: 0;
+    .navbar {
+      padding: 0 10px;
+    }
+  
+    .content_section h1 {
+      padding: 10px 0;
+      text-align: left;
+      font-size: 24px;
+    }
+  
+    .content_section h2 {
+      font-size: 18px;
+    }
+    .content_section h3 {
+      font-size: 18px;
+    }
+  
+    .content_section p {
+      font-size: 0.9rem;
+    }
+  
+    .book_slot {
+      width: 180px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .problem_box h2 {
+      font-size: 20px;
+    }
+  
+    .problem_box span {
+      font-size: 24px;
+    }
+
+    .problem_box .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
 
     }
+  
+    .problem_box .left_sec1, .problem_box .right_sec1 {
+      width: 90%;
+      height: 120px;
+    }
+
+    .clients {
+      padding: 15px 0;
+    }
+  
+    .clients h3 {
+      font-size: 20px;
+    }
+  
+    .clients .client_box {
+      gap: 0.8rem;
+    }
+  
+    .client_box p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    
   }
+  
+
+   
+  
+  
+  
+  
   

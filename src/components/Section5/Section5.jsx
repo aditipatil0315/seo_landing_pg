@@ -46,11 +46,12 @@ const Section5 = () => {
         </div>
       </div>
       {/* Special Offer */}
-      <div className="special_offer">
+      {/* <div className="special_offer">
         <h3>Limited-Time Offer:</h3>
         <p>Get a Free Website Audit + 20% Discount on Your First Month!</p>
         <button className="offer_button"> Claim Your Offer Now</button>
-      </div>
+      </div> */}
+      <br />
 
       {/* Call to Action */}
       <div className="cta_section">

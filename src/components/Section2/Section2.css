@@ -2,8 +2,8 @@
 
 .section2 {
     text-align: center;
-    padding: 20px 50px ;
-    font-family: Libre Baskerville;
+    padding: 20px 50px;
+  font-family: Montserrat ;
     width: 100%;
     min-height: auto;
   }
@@ -13,6 +13,36 @@
   .section2 span {
     font-weight: 700;
   
+  }
+
+  .special_offer {
+    /* margin-top: 30px; */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .special_offer h3 {
+    font-size: 1.5rem;
+    color: #FF5F4F;
+  }
+  
+  .special_offer p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .offer_button {
+    background: #FF5F4F;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
   }
   
   
@@ -73,7 +103,6 @@
     font-size: 16px;
   }
   
-  /* Responsive Design */
   @media (max-width: 1024px) {
     .cards-wrapper {
       grid-template-columns: repeat(2, 1fr);
@@ -89,4 +118,55 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
+  @media (max-width: 600px) {
+  .section2 {
+    padding: 20px 20px; 
+  }
+
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .special_offer p {
+    font-size: 1rem;
+  }
+
+  .special_offer h3 {
+    font-size: 1.3rem;
+  }
+
+  .offer_button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .section2-intro {
+    font-size: 16px;
+  }
+
+  .card h4 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
   

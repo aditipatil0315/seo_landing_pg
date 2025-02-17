@@ -1,95 +1,182 @@
-
-
 .section3 {
-    display: flex;
-    justify-content: center;
-    width: 96%;
-    height: 70vh;
-    padding: 90px 50px;
-    font-family: Libre Baskerville;
-    gap: 5rem;
-  }
-  
-  .left_sec3 {
-    width: 40%;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 30px;
+  gap: 3rem;
+}
+
+.box_sec3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Left Section */
+.left_sec3 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 3rem;
+}
+
+.left_sec3 h2 {
+  color: #FF5F4F;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.left_sec3 h3 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.highlight-text {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Right Section */
+.right_sec3 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.right_sec3 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right_sec3 li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.right_sec3 li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #FF5F4F;
+  font-size: 20px;
+}
+
+
+.problem_box .left_sec1 , .problem_box .right_sec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  border-radius: 16px;
+
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section3 {
     flex-direction: column;
-    justify-content: start;
-    padding-top: 5rem;
+    height: auto;
+    padding: 40px 30px;
   }
-  
-  .left_sec3 h2 {
-    color: #FF5F4F;
-    font-size: 36px;
-    font-weight: 600;
-  }
-  
-  .left_sec3 h3 {
-    font-size: 28px;
-    color: black;
-    margin-bottom: 10px;
-  }
-  
-  .highlight-text {
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  
-  .right_sec3 {
-    width: 50%;
-    display: flex;
+
+  .box_sec3 {
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    padding-top: 5rem;
+    text-align: center;
   }
-  
+
+  .left_sec3, .right_sec3 {
+    width: 100%;
+    padding: 20px;
+  }
+
   .right_sec3 ul {
-    list-style-type: none;
-    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
   }
-  
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .section3 {
+    padding: 30px 20px;
+  }
+
+  .left_sec3 h2 {
+    font-size: 28px;
+  }
+
+  .left_sec3 h3 {
+    font-size: 22px;
+  }
+
+  .highlight-text {
+    font-size: 16px;
+  }
+
+  .right_sec3 {
+    padding-top: 20px;
+  }
+
   .right_sec3 li {
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding-left: 20px;
-    position: relative;
+    font-size: 16px;
+    margin-bottom: 12px;
   }
-  
+
   .right_sec3 li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #FF5F4F;
+    font-size: 16px;
+  }
+
+  .problem_box .left_sec1 , .problem_box .right_sec1{
+    height: 200px;
+    width: 230px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 2rem;
+  
+  }
+
+
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .section3 {
+    padding: 20px;
+  }
+
+  .left_sec3 h2 {
+    font-size: 24px;
+  }
+
+  .left_sec3 h3 {
     font-size: 20px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .section3 {
-      flex-direction: column;
-      height: auto;
-      padding: 30px 50px;
-    }
-  
-    .left_sec3, .right_sec3 {
-      width: 100%;
-      text-align: center;
-      padding: 20px;
-    }
-  
-    .right_sec3 ul {
-      text-align: left;
-      margin: 0 auto;
-      max-width: 600px;
-    }
+
+  .highlight-text {
+    font-size: 14px;
   }
-  
-  @media (max-width: 768px) {
-    .section3 {
-      flex-direction: column;
-      height: auto; 
-  
-    }
+
+  .right_sec3 li {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
+}

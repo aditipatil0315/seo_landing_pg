@@ -1,9 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Section1.css';
-import img2 from '../../assets/img1.png';
 
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [menuOpen]);
 
   return (
     <div className='section1'>
@@ -12,40 +28,57 @@ const Section1 = () => {
           logo <br />text
         </div>
 
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <div 
+          className="hamburger" 
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           ☰
         </div>
 
-        <div className={`links ${menuOpen ? "open" : ""}`}>
-          <a onClick={() => {window.location.reload()}} href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#products">Products</a>
-          <a href="#contact">Contact</a>
+        <div ref={menuRef} className={`links ${menuOpen ? "open" : ""}`}>
+          <a onClick={() => setMenuOpen(false)} href="#">Home</a>
+          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
+          <a onClick={() => setMenuOpen(false)} href="#products">Products</a>
+          <a onClick={() => setMenuOpen(false)} href="#contact">Contact</a>
         </div>
       </div>
 
       <div className="content_section">
-        <div className="left">
-          <h1><span>Dominate</span> Search Results with Expert SEO Services <span>Boost</span> Your Online Visibility and Attract <span>High-Quality Leads!</span></h1>
-          <h3>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</h3>
-        </div>
-        <div className="right">
-          <img src={img2} alt="Business Solutions" />
-        </div>
+        <h1>SEO That Attracts, Engages & Converts High-Ticket Clients.</h1>
+        <h2><span>Dominate Search Results</span> with <span>Expert SEO Services</span></h2>
+        <h2>Boost Your Online Visibility and Attract High-Quality Leads!</h2>
+        <br />
+        <br />
+        <h3><span>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</span></h3>
+        <p>Schedule a free consultation to unlock your growth potential.</p>
+        <br /> 
+        <button className='book_slot'>Book My Free Consultation</button>
       </div>
 
       <div className="problem_box">
-        <div className="left_box">
-        <h2>Are You <span>Struggling</span> with These <span>SEO Challenges?</span></h2>
-          <ul>
-            <li>Your website isn’t appearing on the first page of search results.</li>
-            <li>Potential customers are finding your competitors instead of you.</li>
-            <li>You’re getting traffic, but no leads or conversions.</li>
-            <li>You’re unsure how to optimize your website for better rankings.</li>
-          </ul>
+        <h2>Over the years We Have Generated - </h2> 
+        <br />
+        <div className="box">
+          <div className="left_sec1">
+            <span>20 Million+ Revenue</span>
+            <h3>for our clients</h3>
+          </div>
+          <div className="right_sec1">
+            <span>1000+ International leads</span>
+            <h3>for our clients</h3>
+          </div>
         </div>
-        <div className="right_box">
-          <h2>If this sounds familiar, you’re losing valuable business every day!</h2>
+      </div>
+      <br />
+
+      <div className="clients">
+        <h3>Some of Our Clients -</h3>
+        <br />
+        <div className="client_box">
+          <p>Rajog Enterprises</p>
+          <p>Refux</p>
+          <p>Chemiplant Engineering</p>
+
         </div>
       </div>
     </div>
