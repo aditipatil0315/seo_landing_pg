@@ -52,7 +52,7 @@ const Section1 = () => {
         <h3><span>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</span></h3>
         <p>Schedule a free consultation to unlock your growth potential.</p>
         <br /> 
-        <button className='book_slot'>Book My Free Consultation</button>
+        <button className='book_slot'  onClick={() => window.open('https://calendly.com/enquire-stepconsultancy/seo-landing-page', '_blank')}>Book My Free Consultation</button>
       </div>
 
       <div className="problem_box">
