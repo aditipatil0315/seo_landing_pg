@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Section1.css';
+import step_digital from '../../assets/step_digital.jpeg'
 
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Section1 = () => {
     <div className='section1'>
       <div className="navbar">
         <div className="logo">
-          logo <br />text
+          <img src= {step_digital} alt="step-digital-logo" />
         </div>
 
         <div 
