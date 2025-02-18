@@ -116,6 +116,10 @@
     gap: 5rem;
   }
 
+  .problem_box h2 {
+    text-align: center;
+  }
+
   .problem_box span {
     color: #FE6054;
     font-size: 32px;
