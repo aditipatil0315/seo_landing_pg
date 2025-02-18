@@ -26,13 +26,13 @@ const Section1 = () => {
       const tl = gsap.timeline({ repeat: -1, ease: "none" });
 
       tl.to(container, {
-        xPercent: -50, // Moves halfway since we duplicated images
-        duration: 20, // Adjust speed for smoothness
+        xPercent: -50, 
+        duration: 20, 
         ease: "linear",
       });
 
       return () => {
-        tl.kill(); // Cleanup animation on component unmount
+        tl.kill(); 
       };
     }
   }, []);
@@ -97,6 +97,7 @@ const Section1 = () => {
 
       <div className="problem_box">
         <h2>Over the years We Have Generated - </h2> 
+        <br />
         <div className="box">
           <div className="left_sec1">
             <span>20 Million+ Revenue</span>
@@ -109,15 +110,12 @@ const Section1 = () => {
         </div>
       </div>
 
-      <br />
 
-      
+      <h2 className='results_text'><span>Our Results</span></h2>
+      <br />
       
       <div className="our_results_wrapper">
-      <h2><span>Our Results -</span></h2>
-      <br />
         <div className="our_results" ref={resultsRef}>
-          {/* Duplicate images for seamless looping */}
           {[...images, ...images].map((img, index) => (
             <div className="result" key={index}>
               <img src={img} alt={`SEO result ${index}`} />
