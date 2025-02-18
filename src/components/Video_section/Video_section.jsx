@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import "./Video_Section.css"; 
+import "./Video_section.css"; 
 // import seo_vdo from '../../assets/seo_vdo.MP4';
 
 
