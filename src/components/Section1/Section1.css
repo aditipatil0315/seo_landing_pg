@@ -3,7 +3,7 @@
 .section1 {
   background-color: black;
   color: whitesmoke;
-    height: 200vh;
+    height: 190vh;
     width: 100%;
     padding: 0px 90px;
   }
@@ -59,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 60vh;
     width: 100%;
   }
 

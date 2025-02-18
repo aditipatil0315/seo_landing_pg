@@ -6,9 +6,7 @@ const Section2 = () => {
   
 
   return (
-    <div className="section2" id="contact">
-      {/* <br /> */}
-      
+    <div className="section2" id="contact">      
 
       <div className="special_offer">
         <h3>Limited-Time Offer:</h3>
@@ -20,6 +18,7 @@ const Section2 = () => {
           Claim Your Offer Now
         </button>
       </div>
+      <br />
 
       <h2>What We Offer is The Solution</h2>
       <p className="section2-intro">

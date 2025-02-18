@@ -97,7 +97,6 @@ const Section1 = () => {
 
       <div className="problem_box">
         <h2>Over the years We Have Generated - </h2> 
-        <br />
         <div className="box">
           <div className="left_sec1">
             <span>20 Million+ Revenue</span>
@@ -109,7 +108,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-
+<br />
 
       <h2 className='results_text'><span>Our Results</span></h2>
       <br />
