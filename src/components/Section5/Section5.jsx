@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import "./Section5.css";
 
 const Section5 = () => {
-  // State to track open FAQs
   const [openIndex, setOpenIndex] = useState(null);
 
-  // FAQ Data
   const faqs = [
     {
       question: "How long does it take to see results?",
@@ -27,7 +25,6 @@ const Section5 = () => {
 
   return (
     <section className="section5" id="contact">
-      {/* FAQ Section */}
       <div className="faq_section">
         <h2>Frequently Asked Questions</h2>
         <div className="faq_list">
@@ -45,7 +42,8 @@ const Section5 = () => {
           ))}
         </div>
       </div>
-      {/* Special Offer */}
+
+
       {/* <div className="special_offer">
         <h3>Limited-Time Offer:</h3>
         <p>Get a Free Website Audit + 20% Discount on Your First Month!</p>
@@ -53,7 +51,6 @@ const Section5 = () => {
       </div> */}
       <br />
 
-      {/* Call to Action */}
       <div className="cta_section">
         <h2>Take the First Step Toward SEO Success Today!</h2>
         <p>Let’s optimize your website and grow your business together.</p>

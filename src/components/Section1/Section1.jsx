@@ -37,8 +37,16 @@ const Section1 = () => {
         </div>
 
         <div ref={menuRef} className={`links ${menuOpen ? "open" : ""}`}>
-          <a onClick={() => setMenuOpen(false)} href="#">Home</a>
-          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
+        <a 
+    href="#" 
+    onClick={(e) => {
+      e.preventDefault();  
+      setMenuOpen(false);  
+      window.location.reload(); 
+    }}
+  >
+    Home
+  </a>          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
           <a onClick={() => setMenuOpen(false)} href="#products">Products</a>
           <a onClick={() => setMenuOpen(false)} href="#contact">Contact</a>
         </div>

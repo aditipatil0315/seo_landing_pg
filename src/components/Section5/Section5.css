@@ -5,6 +5,8 @@
     width: 100%;
     background-color: #f9f9f9;
     text-align: center;
+  font-family: Montserrat ;
+
   }
   
   .faq_section h2 {
@@ -53,12 +55,10 @@
     background: #fafafa;
   }
   
-  /* Active Question Style */
   .faq_question.active {
     color: #FF5F4F;
   }
   
-  /* CTA Section */
   .cta_section {
     padding: 40px;
     border-radius: 15px;
@@ -122,7 +122,6 @@
   
   
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .section5 {
       padding: 40px 5%;

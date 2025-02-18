@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 20px 50px;
     text-align: center;
-    font-family: Libre Baskerville;
+    font-family: Montserrat ;
     /* border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     background-color: hsl(60, 100%, 95%); */
@@ -83,7 +83,6 @@
   }
 
 
-  /* Testimonial Section */
 .testimonial_section {
     margin-top: 40px;
     text-align: center;
@@ -134,7 +133,6 @@
     color: #222;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .testimonial_cards {
       flex-direction: column;
@@ -157,7 +155,6 @@
   }
   
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .content_sec4 {
       flex-direction: column;

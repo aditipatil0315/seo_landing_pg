@@ -12,7 +12,7 @@ const Section2 = () => {
   ];
 
   return (
-    <div className="section2" id='products'>
+    <div className="section2" id="contact">
       <div className="special_offer">
         <h3>Limited-Time Offer:</h3>
         <p><b>Get a Free Website Audit + 20% Discount on Your First Month!</b></p>
