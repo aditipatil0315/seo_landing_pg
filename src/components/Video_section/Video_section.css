@@ -2,8 +2,8 @@
 
 .section_vdo {
   font-family: Montserrat ;
-
-    height: 100vh;
+    /* background-color: red; */
+    height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,6 +50,8 @@
   }
   
   .video-container {
+    height: 100%;
+    /* background-color: #fff; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -57,6 +59,8 @@
   }
   
   .video-wrapper {
+    height: 100%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -64,8 +68,8 @@
   }
   
   .video {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     cursor: pointer;
     border-radius: 10px;

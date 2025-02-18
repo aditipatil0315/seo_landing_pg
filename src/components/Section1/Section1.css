@@ -3,9 +3,13 @@
 .section1 {
   background-color: black;
   color: whitesmoke;
-    height: 170vh;
+    height: 210vh;
     width: 100%;
     padding: 0px 90px;
+  }
+
+  .section1 span {
+    color: #FE6054;
   }
   
   .navbar {
@@ -104,7 +108,6 @@
     align-items: center;
     width: 100%;
     height: 50vh;
-    padding: 0px;
   }
 
   .problem_box .box {
@@ -132,38 +135,35 @@
 
   }
 
-  .clients {
-    color: whitesmoke;
+  .our_results_wrapper {
+    text-align: center;
     width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    color: #FE6054;
+    padding: 10px 0;
+  }
+
+  
+  
+  .our_results {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-
+    width: max-content; /* Allow smooth scrolling without clipping */
+    gap: 20px;
+  }
+  
+  .result {
+    flex-shrink: 0;
+  }
+  
+  .result img {
+    width: 150px; /* Adjust size */
+    height: auto;
+    object-fit: cover;
   }
 
-  .clients h3 {
-    color: whitesmoke;
-    font-size: 30px;
-  }
-
-  .clients .client_box {
-    font-family: Montserrat ;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .client_box p {
-    font-family: Montserrat ;
-    font-size: 1.2rem;
-    font-size: 500;
-  }
-
-
+  
 
   @media screen and (max-width: 1024px) {
     .section1 {
@@ -201,6 +201,18 @@
   @media screen and (max-width: 768px) {
     .section1 {
       padding: 0 20px;
+    }
+
+    .our_results_wrapper {
+      padding: 5px 0;
+    }
+  
+    .our_results {
+      gap: 10px;
+    }
+  
+    .result img {
+      width: 120px; /* Reduce image size */
     }
   
     .navbar {
@@ -267,29 +279,29 @@
       height: 160px;
     }
 
-    .clients {
-      text-align: center;
-      padding: 20px 0;
-    }
-  
-    .clients h3 {
-      font-size: 24px;
-    }
-  
-    .clients .client_box {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .client_box p {
-      font-size: 1rem;
-    }
 
   }
   
   @media screen and (max-width: 480px) {
     .section1 {
       padding: 20px 10px;
+    }
+
+    .our_results_wrapper {
+      padding: 5px 0;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .our_results {
+      display: flex;
+      gap: 8px;
+    }
+  
+    .result img {
+      width: 100px; /* Further reduce image size */
     }
   
     .navbar {
@@ -340,23 +352,7 @@
       height: 120px;
     }
 
-    .clients {
-      padding: 15px 0;
-    }
-  
-    .clients h3 {
-      font-size: 20px;
-    }
-  
-    .clients .client_box {
-      gap: 0.8rem;
-    }
-  
-    .client_box p {
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
+    
     .logo img {
       width: 20%;
       margin-bottom: 2rem;

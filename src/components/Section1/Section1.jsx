@@ -1,10 +1,41 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Section1.css';
+import gsap from "gsap";
+
 import step_digital from '../../assets/step_digital.jpeg'
+import img1 from "../../assets/1.jpeg";
+import img2 from "../../assets/2.jpeg";
+import img3 from "../../assets/3.jpeg";
+import img4 from "../../assets/4.jpeg";
+import img5 from "../../assets/5.jpeg";
+import img6 from "../../assets/6.jpeg";
+import img7 from "../../assets/7.jpeg";
+
+const images = [img1, img2, img3, img4, img5, img6, img7];
 
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+
+  const resultsRef = useRef(null);
+
+  useEffect(() => {
+    const container = resultsRef.current;
+
+    if (container) {
+      const tl = gsap.timeline({ repeat: -1, ease: "none" });
+
+      tl.to(container, {
+        xPercent: -50, // Moves halfway since we duplicated images
+        duration: 20, // Adjust speed for smoothness
+        ease: "linear",
+      });
+
+      return () => {
+        tl.kill(); // Cleanup animation on component unmount
+      };
+    }
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -66,7 +97,6 @@ const Section1 = () => {
 
       <div className="problem_box">
         <h2>Over the years We Have Generated - </h2> 
-        <br />
         <div className="box">
           <div className="left_sec1">
             <span>20 Million+ Revenue</span>
@@ -78,18 +108,25 @@ const Section1 = () => {
           </div>
         </div>
       </div>
+
       <br />
 
-      <div className="clients">
-        <h3>Some of Our Clients -</h3>
-        <br />
-        <div className="client_box">
-          <p>Rajog Enterprises</p>
-          <p>Refux</p>
-          <p>Chemiplant Engineering</p>
-
+      
+      
+      <div className="our_results_wrapper">
+      <h2><span>Our Results -</span></h2>
+      <br />
+        <div className="our_results" ref={resultsRef}>
+          {/* Duplicate images for seamless looping */}
+          {[...images, ...images].map((img, index) => (
+            <div className="result" key={index}>
+              <img src={img} alt={`SEO result ${index}`} />
+            </div>
+          ))}
         </div>
       </div>
+
+      
     </div>
   );
 };
