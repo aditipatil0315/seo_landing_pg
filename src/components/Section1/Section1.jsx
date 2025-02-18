@@ -3,6 +3,8 @@ import './Section1.css';
 import gsap from "gsap";
 
 import step_digital from '../../assets/step_digital.jpeg'
+import step_digital_nobg from '../../assets/step_digital_nobg.png'
+
 import img1 from "../../assets/1.jpeg";
 import img2 from "../../assets/2.jpeg";
 import img3 from "../../assets/3.jpeg";
@@ -57,7 +59,7 @@ const Section1 = () => {
     <div className='section1'>
       <div className="navbar">
         <div className="logo">
-          <img src= {step_digital} alt="step-digital-logo" />
+          <img src= {step_digital_nobg} alt="step-digital-logo" />
         </div>
 
         <div 

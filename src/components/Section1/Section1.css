@@ -5,7 +5,7 @@
   color: whitesmoke;
     height: 190vh;
     width: 100%;
-    padding: 0px 90px;
+    padding: 0px 30px;
   }
 
   .section1 span {
@@ -361,7 +361,7 @@
 
     
     .logo img {
-      width: 20%;
+      width: 30%;
       margin-bottom: 2rem;
     }
 
