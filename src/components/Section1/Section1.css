@@ -170,6 +170,50 @@
     object-fit: cover;
   }
 
+  .floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 0%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-button,
+  .call-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 50px;
+    height: 50px;
+  }
+
+  .floating-buttons i {
+    font-size: 20px;
+  }
+  
+  .call-button {
+    background-color: #007bff;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #27c862;
+  }
+  
+  .call-button:hover {
+    background-color: #2a72bf;
+  }
+
   
 
   @media screen and (max-width: 1024px) {
@@ -286,6 +330,18 @@
       height: 160px;
     }
 
+
+    .floating-buttons {
+      right: 10px;
+    }
+    
+    .whatsapp-button,
+    .call-button {
+      width: 50px;
+      height: 50px;
+      font-size: 14px;
+      padding: 8px;
+    }
 
   }
   

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Section1.css';
 import gsap from "gsap";
 
-import step_digital from '../../assets/step_digital.jpeg'
 import step_digital_nobg from '../../assets/step_digital_nobg.png'
 
 import img1 from "../../assets/1.jpeg";
@@ -54,6 +53,9 @@ const Section1 = () => {
 
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
+
+
+  const phoneNumber = "+919682122579";
 
   return (
     <div className='section1'>
@@ -123,6 +125,15 @@ const Section1 = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="floating-buttons">
+        <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="whatsapp-button">
+        <i className="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href={`tel:${phoneNumber}`} className="call-button">
+        <i className="fa-solid fa-phone"></i>
+        </a>
       </div>
 
       
