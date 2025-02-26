@@ -1,21 +1,14 @@
 import { useRef, useState } from "react";
-import "./Video_section.css"; 
-// import seo_vdo from '../../assets/seo_vdo.MP4';
-
+import "./Video_section.css";
 
 const Video_Section = () => {
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   const handleVideoClick = () => {
     if (videoRef.current) {
-      if (!isPlaying) {
-        videoRef.current.muted = false;
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-      setIsPlaying(!isPlaying);
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
     }
   };
 
@@ -24,19 +17,24 @@ const Video_Section = () => {
       <div className="content">
         <h2>Hello Business Owners !!!</h2>
         <h3>We specialize in Generating <span>High Quality Inbound leads</span> for our clients that are Engaging and Warm.</h3>
-        <p>Last Financial year one of our client Onboarded a customer worth 1.2 Million US Dollar through our Inbound lead generation stratergy.</p>
+        <p>Last Financial year one of our client Onboarded a customer worth 1.2 Million US Dollar through our Inbound lead generation strategy.</p>
       </div>
 
       <div className="video-container">
         <div className="video-wrapper">
-        <video
-  ref={videoRef}
-  className="video"
-  src="/videos/seo_vdo.MP4" 
-  muted
-  playsInline
-  onClick={handleVideoClick}
-/>
+          <video
+            ref={videoRef}
+            className="video"
+            src="/videos/seo_vdo.MP4"
+            muted={isMuted}
+            playsInline
+            autoPlay
+            onClick={handleVideoClick}
+          />
+           <div className="sound-indicator">
+            {isMuted ? "🔇 Muted" : "🔊 Sound On"}
+          </div>
+         
         </div>
       </div>
     </section>

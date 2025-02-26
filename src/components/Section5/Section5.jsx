@@ -54,7 +54,7 @@ const Section5 = () => {
       <div className="cta_section">
         <h2>Take the First Step Toward SEO Success Today!</h2>
         <p>Let’s optimize your website and grow your business together.</p>
-        <button className="cta_button"
+        <button className='book_slot'
          onClick={() => window.open('https://calendly.com/enquire-stepconsultancy/seo-landing-page', '_blank')}
         >Book Your Free SEO Consultation </button>
       </div>

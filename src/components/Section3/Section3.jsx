@@ -6,6 +6,7 @@ const Section3 = () => {
     <div className="section3" id='about'>
       <div className="box_sec3">
       <div className="left_sec3">
+        <br /><br />
         <h2>Why Choose Us?</h2>
         <h3>Here’s Why Manufacturers and IT Companies Trust Us:</h3>
         <p className="highlight-text">

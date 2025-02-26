@@ -11,14 +11,14 @@ const Section2 = () => {
       <div className="special_offer">
         <h3>Limited-Time Offer:</h3>
         <p><b>Get a Free Website Audit + 20% Discount on Your First Month!</b></p>
+        <br />
         <button
-          className="offer_button"
+          className='book_slot'
           onClick={() => window.open('https://calendly.com/enquire-stepconsultancy/seo-landing-page', '_blank')}
         >
           Claim Your Offer Now
         </button>
       </div>
-      <br />
 
       <h2>What We Offer is The Solution</h2>
       <p className="section2-intro">

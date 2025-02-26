@@ -55,6 +55,9 @@ const Section1 = () => {
   }, [menuOpen]);
 
 
+  
+
+
   const phoneNumber = "+919682122579";
 
   return (

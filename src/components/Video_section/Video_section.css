@@ -62,6 +62,7 @@
     height: 100%;
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: start;
     /*  */
@@ -90,6 +91,10 @@
   
     .video-container {
       width: 70%;
+    }
+
+    .video-wrapper {
+      margin-bottom: 3 rem;
     }
 
     .video {
