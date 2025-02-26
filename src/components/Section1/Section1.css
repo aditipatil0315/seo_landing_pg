@@ -85,12 +85,7 @@
   } */
 
 
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); } 
-    100% { transform: scale(1); }
-}
-
+ 
 .book_slot {
     height: 50px;
     width: 270px;
@@ -105,13 +100,10 @@
     border: 1px solid black;
     outline: none;
     border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-    animation: pulse 1.8s infinite ease-in-out;
 }
 
 .book_slot:hover {
-    background-color: #ee554d; 
-    transform: scale(1.07); 
+    background-color: #e9433b; 
 }
 
 
