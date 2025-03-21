@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import "./Video_section.css";
+import thnail from '../../assets/thumbnail.jpeg'
 
 const Video_Section = () => {
   const videoRef = useRef(null);
@@ -30,6 +31,7 @@ const Video_Section = () => {
             playsInline
             autoPlay
             onClick={handleVideoClick}
+            poster= {thnail}
           />
            <div className="sound-indicator">
             {isMuted ? "🔇 Muted" : "🔊 Sound On"}

@@ -90,7 +90,7 @@ const Section1 = () => {
         <h1>SEO That Attracts, Engages & Converts High-Ticket Clients.</h1>
         <h2><span>Dominate Search Results</span> with <span>Expert SEO Services</span></h2>
         <h2>Boost Your Online Visibility and Attract High-Quality Leads!</h2>
-        <br />
+        {/* <br /> */}
         <br />
         <h2><span>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</span></h2>
         <p>Schedule a free consultation to unlock your growth potential.</p>
