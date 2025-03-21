@@ -14,7 +14,7 @@ function App() {
       <Section1/>
       <Section2/>
       <br />
-      <Video_Section/>
+      <VideoSection/>
       <Section3/>
       <Section4/>
       <Section5/>
