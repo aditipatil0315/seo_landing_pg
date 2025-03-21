@@ -1,458 +1,389 @@
-
-
 .section1 {
   background-color: black;
   color: whitesmoke;
-    height: 190vh;
-    width: 100%;
-    padding: 0px 30px;
-  }
+  min-height: 100vh;
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .section1 span {
-    color: #FE6054;
-    text-align: center;
-  }
-  
-  .navbar {
-    background-color: black;
-    height: 9vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    margin-top: 3rem;
-  }
+.section1 span {
+  color: #FE6054;
+  text-align: center;
+}
 
-  .logo img{
-    width: 10%;
-    
-  }
-  
-  .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-  }
-  
-  .links a {
-    text-decoration: none;
-    font-size: 16px;
-    color: white;
-    font-weight: 700;
-  }
-  
-  
-  
-  .hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  .content_section {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100%;
-  }
+.navbar {
+  background-color: black;
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
 
-  .content_section h1 {
-    font-size: 50px;
-    text-align: center;
-  }
+.logo {
+  margin-top: 1.5rem;
+}
 
-  /* .content_section .book_slot {
-    height: 50px;
-    width: 270px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color:#FE6054 ;
-    border-radius: 8px;
+.logo img {
+  width: 10%;
+}
 
-  font-family: Montserrat ;
-    padding: 0 20px;
-    font-weight: 700;
-    color: whitesmoke;
-    border: 1px solid black;
-    outline: none;
-  } */
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
 
+.links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
 
- 
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.content_section {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content_section h1 {
+  font-size: 39px;
+  margin: 20px 0;
+}
+
+.content_section h2, .content_section h3 {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.content_section p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .book_slot {
-    height: 50px;
-    width: 270px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #FE6054;
-    border-radius: 8px;
-    font-family: Montserrat;
-    padding: 0 20px;
-    font-weight: 700;
-    color: whitesmoke;
-    border: 1px solid black;
-    outline: none;
-    border: none;
+  height: 50px;
+  width: 270px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #FE6054;
+  border-radius: 8px;
+  font-family: Montserrat;
+  padding: 0 20px;
+  font-weight: 700;
+  color: whitesmoke;
+  border: none;
+  outline: none;
 }
 
 .book_slot:hover {
-    background-color: #e9433b; 
+  background-color: #e9433b;
 }
 
+.problem_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  
+.problem_box .box {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.problem_box h2 {
+  font-size: 24px;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.problem_box span {
+  color: #FE6054;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+.problem_box .left_sec1, .problem_box .right_sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: whitesmoke;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.our_results_wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: #FE6054;
+  padding: 10px 0;
+}
+
+.results_text {
+  text-align: center;
+}
+
+.our_results {
+  display: flex;
+  width: max-content;
+  gap: 20px;
+}
+
+.result {
+  flex-shrink: 0;
+}
+
+.result img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.whatsapp-button, .call-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 9px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  width: 50px;
+  height: 50px;
+}
+
+.floating-buttons i {
+  font-size: 20px;
+}
+
+.call-button {
+  background-color: #007bff;
+}
+
+.whatsapp-button:hover {
+  background-color: #27c862;
+}
+
+.call-button:hover {
+  background-color: #2a72bf;
+}
+
+@media screen and (max-width: 1024px) {
+  .section1 {
+    padding: 0 40px;
+  }
+
+  .navbar {
+    height: 8vh;
+    padding: 0 20px;
+  }
+
+  .links {
+    gap: 20px;
+  }
+
+  .content_section h1 {
+    font-size: 40px;
+  }
 
   .content_section p {
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-
-
-.content_section span {
-  color: #FE6054;
-    
-  }
-  
- 
-  
-  
-  
-  
-
-  .problem_box {
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
+    font-size: 1.2rem;
   }
 
   .problem_box .box {
-    display: flex;
-    gap: 5rem;
+    gap: 3rem;
   }
 
-  .problem_box h2 {
-    text-align: center;
+  .problem_box .left_sec1, .problem_box .right_sec1 {
+    width: 350px;
+    height: 180px;
   }
+}
 
-  .problem_box span {
-    color: #FE6054;
-    font-size: 32px;
-    font-weight: 700;
-  font-family: Montserrat ;
-    
-  }
-
-  .problem_box .left_sec1 , .problem_box .right_sec1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
-    height: 200px;
-    width: 400px;
-    text-align: center;
-
+@media screen and (max-width: 768px) {
+  .section1 {
+    padding: 0 20px;
   }
 
   .our_results_wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    color: #FE6054;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
-  .results_text {
+  .our_results {
+    gap: 10px;
+  }
+
+  .result img {
+    width: 120px;
+  }
+
+  .navbar {
+    height: 7vh;
+    padding: 0 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
     text-align: center;
   }
 
-  
-  
-  .our_results {
+  .links.open {
     display: flex;
-    width: max-content;
-    gap: 20px;
   }
-  
-  .result {
-    flex-shrink: 0;
+
+  .links a {
+    padding: 10px 0;
+    font-size: 14px;
   }
-  
-  .result img {
-    width: 150px; 
+
+  .content_section {
     height: auto;
-    object-fit: cover;
+    padding: 20px 0;
+  }
+
+  .content_section h1 {
+    font-size: 32px;
+  }
+
+  .content_section p {
+    font-size: 1rem;
+  }
+
+  .book_slot {
+    width: 220px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .problem_box {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .problem_box .box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .problem_box .left_sec1, .problem_box .right_sec1 {
+    width: 90%;
+    height: 160px;
   }
 
   .floating-buttons {
-    position: fixed;
-    right: 20px;
-    bottom: 0%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
+    right: 10px;
   }
-  
-  .whatsapp-button,
-  .call-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #25D366;
-    color: white;
-    padding: 9px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
+
+  .whatsapp-button, .call-button {
     width: 50px;
     height: 50px;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section1 {
+    padding: 20px 10px;
   }
 
-  .floating-buttons i {
+  .our_results_wrapper {
+    padding: 5px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .our_results {
+    display: flex;
+    gap: 8px;
+  }
+
+  .result img {
+    width: 100px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .content_section h1 {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .content_section h2 {
+    font-size: 18px;
+  }
+
+  .content_section h3 {
+    font-size: 18px;
+  }
+
+  .content_section p {
+    font-size: 0.9rem;
+  }
+
+  .book_slot {
+    width: 200px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .problem_box h2 {
     font-size: 20px;
   }
-  
-  .call-button {
-    background-color: #007bff;
-  }
-  
-  .whatsapp-button:hover {
-    background-color: #27c862;
-  }
-  
-  .call-button:hover {
-    background-color: #2a72bf;
-  }
-
-  
-
-  @media screen and (max-width: 1024px) {
-    .section1 {
-      padding: 0 40px;
-      height: auto;
-    }
-  
-    .navbar {
-      height: 8vh;
-      padding: 0 20px;
-    }
-  
-    .links {
-      gap: 20px;
-    }
-  
-    .content_section h1 {
-      font-size: 40px;
-    }
-  
-    .content_section p {
-      font-size: 1.2rem;
-    }
-  
-    .problem_box .box {
-      gap: 3rem;
-    }
-  
-    .problem_box .left_sec1, .problem_box .right_sec1 {
-      width: 350px;
-      height: 180px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .section1 {
-      padding: 0 20px;
-    }
-
-    .our_results_wrapper {
-      padding: 5px 0;
-    }
-  
-    .our_results {
-      gap: 10px;
-    }
-  
-    .result img {
-      width: 120px; 
-    }
-  
-    .navbar {
-      height: 7vh;
-      padding: 0 15px;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 7vh;
-      right: 0;
-      width: 100%;
-      background-color: black;
-      padding: 10px 0;
-      text-align: center;
-    }
-  
-    .links.open {
-      display: flex;
-    }
-  
-    .links a {
-      padding: 10px 0;
-      font-size: 14px;
-    }
-  
-    .content_section {
-      height: auto;
-      padding: 20px 0;
-    }
-  
-    .content_section h1 {
-      font-size: 32px;
-    }
-  
-    .content_section p {
-      font-size: 1rem;
-    }
-  
-    .book_slot {
-      width: 220px;
-      height: 50px;
-      font-size: 14px;
-    }
-  
-    .problem_box {
-      height: auto;
-      padding: 20px 0;
-    }
-  
-    .problem_box .box {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  
-    .problem_box .left_sec1, .problem_box .right_sec1 {
-      width: 90%;
-      height: 160px;
-    }
-
-
-    .floating-buttons {
-      right: 10px;
-    }
-    
-    .whatsapp-button,
-    .call-button {
-      width: 50px;
-      height: 50px;
-      font-size: 14px;
-      padding: 8px;
-    }
-
-  }
-  
-  @media screen and (max-width: 480px) {
-    .section1 {
-      padding: 20px 10px;
-    }
-
-    .our_results_wrapper {
-      padding: 5px 0;
-      overflow-x: auto; 
-      white-space: nowrap;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .our_results {
-      display: flex;
-      gap: 8px;
-    }
-  
-    .result img {
-      width: 100px; 
-    }
-  
-    .navbar {
-      padding: 0 10px;
-    }
-  
-    .content_section h1 {
-      padding: 10px 0;
-      text-align: left;
-      font-size: 24px;
-    }
-  
-    .content_section h2 {
-      font-size: 18px;
-    }
-    .content_section h3 {
-      font-size: 18px;
-    }
-  
-    .content_section p {
-      font-size: 0.9rem;
-    }
-  
-    .book_slot {
-      width: 200px;
-      height: 45px;
-      font-size: 12px;
-    }
-  
-    .problem_box h2 {
-      font-size: 20px;
-    }
-  
-    .problem_box span {
-      font-size: 24px;
-    }
-
-    .problem_box .box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 30px;
-
-    }
-  
-    .problem_box .left_sec1, .problem_box .right_sec1 {
-      width: 90%;
-      height: 120px;
-    }
-
-    
-    .logo img {
-      width: 30%;
-      margin-bottom: 2rem;
-    }
-
-    
-  }
-  
-
-   
-  
-  
-  
-  
-  

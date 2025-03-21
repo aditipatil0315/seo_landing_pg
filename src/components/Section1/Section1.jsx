@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Section1.css';
 import gsap from "gsap";
 
-import step_digital_nobg from '../../assets/step_digital_nobg.png'
+import step_digital_nobg from '../../assets/step_digital_nobg.png';
 
 import img1 from "../../assets/1.jpeg";
 import img2 from "../../assets/2.jpeg";
@@ -17,7 +17,6 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 const Section1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
-
   const resultsRef = useRef(null);
 
   useEffect(() => {
@@ -54,17 +53,13 @@ const Section1 = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
 
-
-  
-
-
   const phoneNumber = "+919682122579";
 
   return (
     <div className='section1'>
       <div className="navbar">
         <div className="logo">
-          <img src= {step_digital_nobg} alt="step-digital-logo" />
+          <img src={step_digital_nobg} alt="step-digital-logo" />
         </div>
 
         <div 
@@ -75,16 +70,17 @@ const Section1 = () => {
         </div>
 
         <div ref={menuRef} className={`links ${menuOpen ? "open" : ""}`}>
-        <a 
-    href="#" 
-    onClick={(e) => {
-      e.preventDefault();  
-      setMenuOpen(false);  
-      window.location.reload(); 
-    }}
-  >
-    Home
-  </a>          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
+          <a 
+            href="#" 
+            onClick={(e) => {
+              e.preventDefault();  
+              setMenuOpen(false);  
+              window.location.reload(); 
+            }}
+          >
+            Home
+          </a>
+          <a onClick={() => setMenuOpen(false)} href="#about">About</a>
           <a onClick={() => setMenuOpen(false)} href="#products">Products</a>
           <a onClick={() => setMenuOpen(false)} href="#contact">Contact</a>
         </div>
@@ -96,10 +92,10 @@ const Section1 = () => {
         <h2>Boost Your Online Visibility and Attract High-Quality Leads!</h2>
         <br />
         <br />
-        <h3><span>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</span></h3>
+        <h2><span>Helping Indian Manufacturers and IT Companies Rank Higher, Convert More, and Grow Faster</span></h2>
         <p>Schedule a free consultation to unlock your growth potential.</p>
         <br /> 
-        <button className='book_slot'  onClick={() => window.open('https://calendly.com/enquire-stepconsultancy/seo-landing-page', '_blank')}>Book My Free Consultation</button>
+        <button className='book_slot' onClick={() => window.open('https://calendly.com/enquire-stepconsultancy/seo-landing-page', '_blank')}>Book My Free Consultation</button>
       </div>
 
       <div className="problem_box">
@@ -115,7 +111,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-<br />
+      <br />
 
       <h2 className='results_text'><span>Our Results</span></h2>
       <br />
@@ -132,14 +128,12 @@ const Section1 = () => {
 
       <div className="floating-buttons">
         <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="whatsapp-button">
-        <i className="fa-brands fa-whatsapp"></i>
+          <i className="fa-brands fa-whatsapp"></i>
         </a>
         <a href={`tel:${phoneNumber}`} className="call-button">
-        <i className="fa-solid fa-phone"></i>
+          <i className="fa-solid fa-phone"></i>
         </a>
       </div>
-
-      
     </div>
   );
 };
